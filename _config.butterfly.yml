@@ -81,18 +81,18 @@ katex:
 # --------------------------------------
 
 # Favicon（網站圖標）
-favicon: https://raw.githubusercontent.com/Summid/FurryUniversityBlog/main/source/imgs/lijun_avatar.png
+favicon: /imgs/lijun_avatar.png
 
 # Avatar (頭像)
 avatar:
-  img: https://raw.githubusercontent.com/Summid/FurryUniversityBlog/main/source/imgs/lijun_avatar.png
+  img: /imgs/lijun_avatar.png
   effect: false
 
 # Disable all banner image
 disable_top_img: false
 
 # The banner image of home page
-index_img: https://raw.githubusercontent.com/Summid/FurryUniversityBlog/main/source/imgs/school_morning.png
+index_img: /imgs/school_morning.png
 
 # If the banner of page not setting, it will show the top_img
 default_top_img:
@@ -520,7 +520,7 @@ tag_ui: # 留空或 index
 # Website Background (設置網站背景)
 # can set it to color or image (可設置圖片 或者 顔色)
 # The formal of image: url(http://xxxxxx.com/xxx.jpg)
-background: url(https://raw.githubusercontent.com/Summid/FurryUniversityBlog/main/source/imgs/school_morning.png)
+background: url(/imgs/school_morning.png)
 
 # Footer Background
 footer_bg: false
