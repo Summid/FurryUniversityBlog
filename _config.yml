@@ -3,17 +3,17 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Hexo Template
+title: FurryUniversityBlog
 subtitle: ''
 description: ''
 keywords:
-author: JiJi
+author: Summid
 language: en
 timezone: ''
 
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
-url: https://jiji.pro/hexo-template
+url: https://summid.github.io/FurryUniversityBlog
 permalink: :title/
 permalink_defaults:
 pretty_urls:
@@ -104,4 +104,4 @@ theme: landscape
 deploy:
   type: ''
 
-root: /hexo-template
+# root: /hexo-template
