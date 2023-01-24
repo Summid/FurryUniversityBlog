@@ -104,4 +104,4 @@ theme: butterfly
 deploy:
   type: ''
   
-root: /FurryUniversityBlog/
+# root: /FurryUniversityBlog/
