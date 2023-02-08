@@ -11,7 +11,7 @@ Windows版本下载链接：
 
 Android版本下载链接：
 
-[Android版本下载](https://sgp1.digitaloceanspaces.com/furryuniversityrebirth/FurryUniversityAfterRebirth-0.25-android.apk?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=DO00F42FYWAVBUP6APT8%2F20230208%2Fsgp1%2Fs3%2Faws4_request&X-Amz-Date=20230208T172858Z&X-Amz-Expires=3600&X-Amz-SignedHeaders=host&X-Amz-Signature=86801ace28c543a36400231a43e44c93d55ed5973678fe65068ead0561bc1eb2)
+[Android版本下载](https://sgp1.digitaloceanspaces.com/furryuniversityrebirth/FurryUniversityAfterRebirth-0.25-android.apk?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=DO00F42FYWAVBUP6APT8%2F20230208%2Fsgp1%2Fs3%2Faws4_request&X-Amz-Date=20230208T190902Z&X-Amz-Expires=3600&X-Amz-SignedHeaders=host&X-Amz-Signature=d94fa87a7cc7d74c6cc1a4757cdbe18677a1727f2c105583d03284091a21ea70)
 
 
 
