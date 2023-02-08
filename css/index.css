@@ -2381,7 +2381,7 @@ figure.highlight pre .javascript .function {
   margin: 0;
 }
 #recent-posts > .recent-post-item >.recent-post-info > .article-meta-wrap .article-meta-label {
-  padding-right: 4px;
+  display: none;
 }
 #recent-posts > .recent-post-item >.recent-post-info > .article-meta-wrap .article-meta-separator {
   margin: 0 6px;
@@ -3467,7 +3467,7 @@ h1.page-title + .tag-cloud-list {
   margin-right: 4px;
 }
 #post-info #post-meta .post-meta-label {
-  margin-right: 4px;
+  display: none;
 }
 #post-info #post-meta a {
   color: var(--light-grey);
