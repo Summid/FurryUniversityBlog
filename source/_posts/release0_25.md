@@ -5,17 +5,19 @@ password: SHXC1069
 
 Windows版本下载链接：
 
-[Windows版本下载](https://sgp1.digitaloceanspaces.com/furryuniversityrebirth/FurryUniversityAfterRebirth-0.25-win.zip?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=DO00F42FYWAVBUP6APT8%2F20230208%2Fsgp1%2Fs3%2Faws4_request&X-Amz-Date=20230208T172803Z&X-Amz-Expires=259200&X-Amz-SignedHeaders=host&X-Amz-Signature=422cfbd189b5fc53ed8b74f1eeeeedf62652854ef2a867568f31edd23ccb88a8)
+[Windows版本下载](https://gamedownload.furryuniversity.net/FurryUniversityAfterRebirth-0.25-win.zip)
 
+[Windows版本下载（备用）](https://furryuniversityrebirth.sgp1.digitaloceanspaces.com/FurryUniversityAfterRebirth-0.25-win.zip)
 
 
 Android版本下载链接：
 
-[Android版本下载](https://sgp1.digitaloceanspaces.com/furryuniversityrebirth/FurryUniversityAfterRebirth-0.25-android.apk?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=DO00F42FYWAVBUP6APT8%2F20230208%2Fsgp1%2Fs3%2Faws4_request&X-Amz-Date=20230208T233950Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=825037756c85c1a4deea609ddd59696333e86c95d1b6fc0115378670bd01b5c5)
+[Android版本下载](https://gamedownload.furryuniversity.net/FurryUniversityAfterRebirth-0.25-android.apk)
 
+[Android版本下载（备用）](https://furryuniversityrebirth.sgp1.digitaloceanspaces.com/FurryUniversityAfterRebirth-0.25-android.apk)
 
 
 **注意：**
 
 - 下载服务器非境内服务器，传输速度受地域、访问人数影响的概率较大
-- 下载链接会定时刷新，若遇到无法下载问题，请联系黑川豹或直接与笔者联系，QQ：675495410，邮箱：summid@foxmail.com
+- 若遇到无法下载问题，请联系黑川豹，或直接与笔者联系，QQ：675495410，邮箱：summid@foxmail.com
