@@ -1,6 +1,7 @@
 ---
 title: 兽人大学重生之后0.25版本下载
 password: SHXC1069
+message: 这里需要密码，输入密码后回车确认
 ---
 
 Windows版本下载链接：
