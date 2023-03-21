@@ -95,10 +95,10 @@ disable_top_img: false
 index_img: https://cdn.bilicdn.tk/gh/Summid/FurryUniversityBlog/source/imgs/school_morning.png
 
 # If the banner of page not setting, it will show the top_img
-default_top_img:
+default_top_img: transparent
 
 # The banner image of archive page
-archive_img:
+archive_img: 
 
 # If the banner of tag page not setting, it will show the top_img
 # note: tag page, not tags page (子標籤頁面的 top_img)
