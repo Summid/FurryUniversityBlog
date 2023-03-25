@@ -81,18 +81,18 @@ katex:
 # --------------------------------------
 
 # Favicon（網站圖標）
-favicon: https://cdn.bilicdn.tk/gh/Summid/FurryUniversityBlog/source/imgs/lijun_avatar.png
+favicon: https://cdn.staticaly.com/gh/Summid/FurryUniversityBlog/v0.2/source/imgs/lijun_avatar.png
 
 # Avatar (頭像)
 avatar:
-  img: https://cdn.bilicdn.tk/gh/Summid/FurryUniversityBlog/source/imgs/lijun_avatar.png
+  img: https://cdn.staticaly.com/gh/Summid/FurryUniversityBlog/v0.2/source/imgs/lijun_avatar.png
   effect: false
 
 # Disable all banner image
 disable_top_img: false
 
 # The banner image of home page
-index_img: https://cdn.bilicdn.tk/gh/Summid/FurryUniversityBlog/source/imgs/school_morning_tiny.png
+index_img: https://cdn.staticaly.com/gh/Summid/FurryUniversityBlog/v0.2/source/imgs/school_morning_tiny.png
 
 # If the banner of page not setting, it will show the top_img
 default_top_img: transparent
@@ -520,7 +520,7 @@ tag_ui: # 留空或 index
 # Website Background (設置網站背景)
 # can set it to color or image (可設置圖片 或者 顔色)
 # The formal of image: url(http://xxxxxx.com/xxx.jpg)
-background: url(https://cdn.bilicdn.tk/gh/Summid/FurryUniversityBlog/source/imgs/school_morning_tiny.png)
+background: url(https://cdn.staticaly.com/gh/Summid/FurryUniversityBlog/v0.2/source/imgs/school_morning_tiny.png)
 
 # Footer Background
 footer_bg: "#00ffff"
