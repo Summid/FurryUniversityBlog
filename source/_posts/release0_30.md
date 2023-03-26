@@ -5,22 +5,29 @@ password: furry
 message: 请输入网站主页公告栏中的密码，回车确认
 ---
 
+推荐优先使用网盘下载，给小水管和钱包分担点压力ヽ(*。>Д<)o゜
+
+
 Windows（电脑）版本下载链接：
 
-[Windows版本下载](https://furryuniversityrebirth.sgp1.digitaloceanspaces.com/FurryUniversityAfterRebirth-0.3-win.zip)
+[Windows版本下载（网盘下载）](https://ln5.sync.com/dl/a2a2a4440/2n46a7dq-rqigikw8-esn4x64c-kzvymyjf) 密码：furry
 
-[Windows版本下载（备用0）](https://gamedownload.furryuniversity.net/FurryUniversityAfterRebirth-0.3-win.zip)
+[Windows版本下载（直链下载0）](https://furryuniversityrebirth.sgp1.digitaloceanspaces.com/FurryUniversityAfterRebirth-0.3-win.zip)
 
-[Windows版本下载（备用1）](https://furryuniversityrebirth.sgp1.cdn.digitaloceanspaces.com/FurryUniversityAfterRebirth-0.3-win.zip)
+[Windows版本下载（直链下载1）](https://gamedownload.furryuniversity.net/FurryUniversityAfterRebirth-0.3-win.zip)
+
+[Windows版本下载（直链下载2）](https://furryuniversityrebirth.sgp1.cdn.digitaloceanspaces.com/FurryUniversityAfterRebirth-0.3-win.zip)
 
 
 Android（安卓、鸿蒙）版本下载链接：
 
-[Android版本下载](https://furryuniversityrebirth.sgp1.digitaloceanspaces.com/FurryUniversityAR0.3.apk)
+[Android版本下载（网盘下载）](https://ln5.sync.com/dl/d697a4770/rxqw237q-vq9nyh88-q4gxfvi6-3es947yy) 密码：furry
 
-[Android版本下载（备用0）](https://gamedownload.furryuniversity.net/FurryUniversityAR0.3.apk)
+[Android版本下载（直链下载0）](https://furryuniversityrebirth.sgp1.digitaloceanspaces.com/FurryUniversityAR0.3.apk)
 
-[Android版本下载（备用1）](https://furryuniversityrebirth.sgp1.cdn.digitaloceanspaces.com/FurryUniversityAR0.3.apk)
+[Android版本下载（直链下载1）](https://gamedownload.furryuniversity.net/FurryUniversityAR0.3.apk)
+
+[Android版本下载（直链下载2）](https://furryuniversityrebirth.sgp1.cdn.digitaloceanspaces.com/FurryUniversityAR0.3.apk)
 
 **注意：**
 
