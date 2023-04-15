@@ -92,7 +92,7 @@ avatar:
 disable_top_img: false
 
 # The banner image of home page
-index_img: https://cnn.hd-r.cn/300de428f2b8ff59be76af1de270d82f.png
+index_img: https://great.wzznft.com/i/2023/04/15/u9abg0.png
 
 # If the banner of page not setting, it will show the top_img
 default_top_img: transparent
@@ -520,7 +520,7 @@ tag_ui: # 留空或 index
 # Website Background (設置網站背景)
 # can set it to color or image (可設置圖片 或者 顔色)
 # The formal of image: url(http://xxxxxx.com/xxx.jpg)
-background: url(https://cnn.hd-r.cn/300de428f2b8ff59be76af1de270d82f.png)
+background: url(https://great.wzznft.com/i/2023/04/15/u9abg0.png)
 
 # Footer Background
 footer_bg: "#00ffff"
