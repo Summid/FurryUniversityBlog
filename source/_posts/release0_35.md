@@ -1,7 +1,7 @@
 ---
 title: 兽人大学重生之后0.35版本下载
 date: 2023-04-28
-password: furry
+password: Furry35
 message: 请输入密码，回车确认
 ---
 
