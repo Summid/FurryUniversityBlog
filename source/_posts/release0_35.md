@@ -1,27 +1,33 @@
 ---
-title: 兽人大学重生之后0.30版本下载
-date: 2023-03-20
+title: 兽人大学重生之后0.35版本下载
+date: 2023-04-28
 password: furry
-message: 请输入网站主页公告栏中的密码，回车确认
+message: 请输入密码，回车确认
 ---
+
+推荐优先使用Sync网盘下载，给小水管和钱包分担点压力ヽ(*。>Д<)o゜
 
 
 Windows（电脑）版本下载链接：
 
-[Windows版本下载（直链下载0）](https://furryuniversityrebirth.sgp1.digitaloceanspaces.com/FurryUniversityAfterRebirth-0.3-win.zip)
+[Windows版本下载（Sync网盘下载）](https://ln5.sync.com/dl/161b9c140/he7983xq-mf8c35r4-v8h799sh-xpm76v58) 密码：Furry35
 
-[Windows版本下载（直链下载1）](https://gamedownload.furryuniversity.net/FurryUniversityAfterRebirth-0.3-win.zip)
+[Windows版本下载（直链下载0）](https://gamedownload.furryuniversity.net/FurryUniversityAfterRebirth-0.35-win.zip)
 
-[Windows版本下载（直链下载2）](https://furryuniversityrebirth.sgp1.cdn.digitaloceanspaces.com/FurryUniversityAfterRebirth-0.3-win.zip)
+[Windows版本下载（直链下载1）](https://furryuniversityrebirth.sgp1.cdn.digitaloceanspaces.com/FurryUniversityAfterRebirth-0.35-win.zip)
+
+[Windows版本下载（直链下载2）](https://furryuniversityrebirth.sgp1.digitaloceanspaces.com/FurryUniversityAfterRebirth-0.35-win.zip)
 
 
 Android（安卓、鸿蒙）版本下载链接：
 
-[Android版本下载（直链下载0）](https://furryuniversityrebirth.sgp1.digitaloceanspaces.com/FurryUniversityAR0.3.apk)
+[Android版本下载（Sync网盘下载）](https://ln5.sync.com/dl/b55834810/iisqm3c6-wqb7k8qv-p9we43gj-pfc6hu99) 密码：Furry35
 
-[Android版本下载（直链下载1）](https://gamedownload.furryuniversity.net/FurryUniversityAR0.3.apk)
+[Android版本下载（直链下载0）](https://gamedownload.furryuniversity.net/FurryUniversityAfterRebirth-0.35-android.apk)
 
-[Android版本下载（直链下载2）](https://furryuniversityrebirth.sgp1.cdn.digitaloceanspaces.com/FurryUniversityAR0.3.apk)
+[Android版本下载（直链下载1）](https://furryuniversityrebirth.sgp1.cdn.digitaloceanspaces.com/FurryUniversityAfterRebirth-0.35-android.apk)
+
+[Android版本下载（直链下载2）](https://furryuniversityrebirth.sgp1.digitaloceanspaces.com/FurryUniversityAfterRebirth-0.35-android.apk)
 
 **注意：**
 
