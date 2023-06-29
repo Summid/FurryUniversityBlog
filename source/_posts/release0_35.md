@@ -5,12 +5,8 @@ password: Furry35
 message: 请输入密码，回车确认
 ---
 
-推荐优先使用Sync网盘下载，给小水管和钱包分担点压力ヽ(*。>Д<)o゜
-
 
 Windows（电脑）版本下载链接：
-
-[Windows版本下载（Sync网盘下载）](https://ln5.sync.com/dl/161b9c140/he7983xq-mf8c35r4-v8h799sh-xpm76v58) 密码：Furry35
 
 [Windows版本下载（直链下载0）](https://gamedownload.furryuniversity.net/FurryUniversityAfterRebirth-0.35-win.zip)
 
@@ -21,7 +17,6 @@ Windows（电脑）版本下载链接：
 
 Android（安卓、鸿蒙）版本下载链接：
 
-[Android版本下载（Sync网盘下载）](https://ln5.sync.com/dl/b55834810/iisqm3c6-wqb7k8qv-p9we43gj-pfc6hu99) 密码：Furry35
 
 [Android版本下载（直链下载0）](https://gamedownload.furryuniversity.net/FurryUniversityAfterRebirth-0.35-android.apk)
 
