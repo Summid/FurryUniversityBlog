@@ -2,7 +2,7 @@
 title: 兽人大学重生之后0.40版本下载
 date: 2023-06-29
 password: shourendaxue
-message: 请输入密码，回车确认
+message: 请输入游戏名（四个字，拼音），回车确认
 ---
 
 推荐优先使用Sync网盘下载，给小水管和钱包分担点压力ヽ(*。>Д<)o゜
