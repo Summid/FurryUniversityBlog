@@ -12,22 +12,22 @@ Windows（电脑）版本下载链接：
 
 [Windows版本下载（Sync网盘下载）](https://ln5.sync.com/dl/8961007b0/u5zuczdg-3pixetwy-ghee3cwi-hm7i72v6) 密码：shourendaxue
 
-[Windows版本下载（直链下载0）](https://gamedownload.furryuniversity.net/FurryUniversityAfterRebirth-qwerty-0.40-win.zip)
+[Windows版本下载（直链下载0）](https://gamedownload.furryuniversity.net/FurryUniversityAfterRebirth-qwertyuiop-0.40-win.zip)
 
-[Windows版本下载（直链下载1）](https://furryuniversityrebirth.sgp1.cdn.digitaloceanspaces.com/FurryUniversityAfterRebirth-qwerty-0.40-win.zip)
+[Windows版本下载（直链下载1）](https://furryuniversityrebirth.sgp1.cdn.digitaloceanspaces.com/FurryUniversityAfterRebirth-qwertyuiop-0.40-win.zip)
 
-[Windows版本下载（直链下载2）](https://furryuniversityrebirth.sgp1.digitaloceanspaces.com/FurryUniversityAfterRebirth-qwerty-0.40-win.zip)
+[Windows版本下载（直链下载2）](https://furryuniversityrebirth.sgp1.digitaloceanspaces.com/FurryUniversityAfterRebirth-qwertyuiop-0.40-win.zip)
 
 
 Android（安卓、鸿蒙）版本下载链接：
 
 [Android版本下载（Sync网盘下载）](https://ln5.sync.com/dl/95f6ca480/qiw4bdc3-yq967xww-kim6d5hj-q5myx98x) 密码：shourendaxue
 
-[Android版本下载（直链下载0）](https://gamedownload.furryuniversity.net/FurryUniversityAfterRebirth-qwerty-0.40-android.apk)
+[Android版本下载（直链下载0）](https://gamedownload.furryuniversity.net/FurryUniversityAfterRebirth-qwertyuiop-0.40-android.apk)
 
-[Android版本下载（直链下载1）](https://furryuniversityrebirth.sgp1.cdn.digitaloceanspaces.com/FurryUniversityAfterRebirth-qwerty-0.40-android.apk)
+[Android版本下载（直链下载1）](https://furryuniversityrebirth.sgp1.cdn.digitaloceanspaces.com/FurryUniversityAfterRebirth-qwertyuiop-0.40-android.apk)
 
-[Android版本下载（直链下载2）](https://furryuniversityrebirth.sgp1.digitaloceanspaces.com/FurryUniversityAfterRebirth-qwerty-0.40-android.apk)
+[Android版本下载（直链下载2）](https://furryuniversityrebirth.sgp1.digitaloceanspaces.com/FurryUniversityAfterRebirth-qwertyuiop-0.40-android.apk)
 
 **注意：**
 
