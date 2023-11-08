@@ -7,7 +7,7 @@
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://sukicdn.com/summid/i/2023/04/17/lijun_avatar.png">
 <meta property="article:published_time" content="2023-04-28T00:00:00.000Z">
-<meta property="article:modified_time" content="2023-08-08T05:19:22.098Z">
+<meta property="article:modified_time" content="2023-11-08T14:31:55.141Z">
 <meta property="article:author" content="Summid">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https://sukicdn.com/summid/i/2023/04/17/lijun_avatar.png"><link rel="shortcut icon" href="https://sukicdn.com/summid/i/2023/04/17/lijun_avatar.png"><link rel="canonical" href="https://fuafter.com/release0_35/index.html"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox/fancybox.min.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = {
@@ -37,11 +37,9 @@
   copyright: undefined,
   lightbox: 'fancybox',
   Snackbar: undefined,
-  source: {
-    justifiedGallery: {
-      js: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery/dist/fjGallery.min.js',
-      css: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery/dist/fjGallery.min.css'
-    }
+  infinitegrid: {
+    js: 'https://cdn.jsdelivr.net/npm/@egjs/infinitegrid/dist/infinitegrid.min.js',
+    buttonText: '加载更多'
   },
   isPhotoFigcaption: false,
   islazyload: false,
@@ -57,85 +55,78 @@
   isHome: false,
   isHighlightShrink: false,
   isToc: true,
-  postUpdate: '2023-08-08 05:19:22'
-}</script><noscript><style type="text/css">
-  #nav {
-    opacity: 1
-  }
-  .justified-gallery img {
-    opacity: 1
-  }
-
-  #recent-posts time,
-  #post-meta time {
-    display: inline !important
-  }
-</style></noscript><script>(win=>{
-    win.saveToLocal = {
-      set: function setWithExpiry(key, value, ttl) {
-        if (ttl === 0) return
-        const now = new Date()
-        const expiryDay = ttl * 86400000
-        const item = {
-          value: value,
-          expiry: now.getTime() + expiryDay,
+  postUpdate: '2023-11-08 14:31:55'
+}</script><script>(win=>{
+      win.saveToLocal = {
+        set: (key, value, ttl) => {
+          if (ttl === 0) return
+          const now = Date.now()
+          const expiry = now + ttl * 86400000
+          const item = {
+            value,
+            expiry
+          }
+          localStorage.setItem(key, JSON.stringify(item))
+        },
+      
+        get: key => {
+          const itemStr = localStorage.getItem(key)
+      
+          if (!itemStr) {
+            return undefined
+          }
+          const item = JSON.parse(itemStr)
+          const now = Date.now()
+      
+          if (now > item.expiry) {
+            localStorage.removeItem(key)
+            return undefined
+          }
+          return item.value
         }
-        localStorage.setItem(key, JSON.stringify(item))
-      },
-
-      get: function getWithExpiry(key) {
-        const itemStr = localStorage.getItem(key)
-
-        if (!itemStr) {
-          return undefined
+      }
+    
+      win.getScript = (url, attr = {}) => new Promise((resolve, reject) => {
+        const script = document.createElement('script')
+        script.src = url
+        script.async = true
+        script.onerror = reject
+        script.onload = script.onreadystatechange = function() {
+          const loadState = this.readyState
+          if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+          script.onload = script.onreadystatechange = null
+          resolve()
         }
-        const item = JSON.parse(itemStr)
-        const now = new Date()
 
-        if (now.getTime() > item.expiry) {
-          localStorage.removeItem(key)
-          return undefined
+        Object.keys(attr).forEach(key => {
+          script.setAttribute(key, attr[key])
+        })
+
+        document.head.appendChild(script)
+      })
+    
+      win.getCSS = (url, id = false) => new Promise((resolve, reject) => {
+        const link = document.createElement('link')
+        link.rel = 'stylesheet'
+        link.href = url
+        if (id) link.id = id
+        link.onerror = reject
+        link.onload = link.onreadystatechange = function() {
+          const loadState = this.readyState
+          if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+          link.onload = link.onreadystatechange = null
+          resolve()
         }
-        return item.value
-      }
-    }
-  
-    win.getScript = url => new Promise((resolve, reject) => {
-      const script = document.createElement('script')
-      script.src = url
-      script.async = true
-      script.onerror = reject
-      script.onload = script.onreadystatechange = function() {
-        const loadState = this.readyState
-        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
-        script.onload = script.onreadystatechange = null
-        resolve()
-      }
-      document.head.appendChild(script)
-    })
-  
-    win.getCSS = (url,id = false) => new Promise((resolve, reject) => {
-      const link = document.createElement('link')
-      link.rel = 'stylesheet'
-      link.href = url
-      if (id) link.id = id
-      link.onerror = reject
-      link.onload = link.onreadystatechange = function() {
-        const loadState = this.readyState
-        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
-        link.onload = link.onreadystatechange = null
-        resolve()
-      }
-      document.head.appendChild(link)
-    })
-  
-      win.activateDarkMode = function () {
+        document.head.appendChild(link)
+      })
+    
+      win.activateDarkMode = () => {
         document.documentElement.setAttribute('data-theme', 'dark')
         if (document.querySelector('meta[name="theme-color"]') !== null) {
           document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
         }
       }
-      win.activateLightMode = function () {
+      win.activateLightMode = () => {
         document.documentElement.setAttribute('data-theme', 'light')
         if (document.querySelector('meta[name="theme-color"]') !== null) {
           document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
@@ -157,7 +148,7 @@
               const isNight = hour <= 6 || hour >= 18
               isNight ? activateDarkMode() : activateLightMode()
             }
-            window.matchMedia('(prefers-color-scheme: dark)').addListener(function (e) {
+            window.matchMedia('(prefers-color-scheme: dark)').addListener(e => {
               if (saveToLocal.get('theme') === undefined) {
                 e.matches ? activateDarkMode() : activateLightMode()
               }
@@ -174,14 +165,14 @@
         }
       }
     
-    const detectApple = () => {
-      if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
-        document.documentElement.classList.add('apple')
+      const detectApple = () => {
+        if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+          document.documentElement.classList.add('apple')
+        }
       }
-    }
-    detectApple()
-    })(window)</script><meta name="generator" content="Hexo 6.3.0"></head><body><div id="web_bg"></div><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="https://sukicdn.com/summid/i/2023/04/17/lijun_avatar.png" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">4</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">0</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">0</div></a></div><hr class="custom-hr"/></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background: transparent"><nav id="nav"><span id="blog-info"><a href="/" title="兽人大学公告栏"><span class="site-name">兽人大学公告栏</span></a></span><div id="menus"><div id="toggle-menu"><a class="site-page" href="javascript:void(0);"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">兽人大学重生之后0.35版本下载</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2023-04-28T00:00:00.000Z" title="发表于 2023-04-28 00:00:00">2023-04-28</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2023-08-08T05:19:22.098Z" title="更新于 2023-08-08 05:19:22">2023-08-08</time></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title="兽人大学重生之后0.35版本下载"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">阅读量:</span><span id="busuanzi_value_page_pv"><i class="fa-solid fa-spinner fa-spin"></i></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><div class="hbe hbe-container" id="hexo-blog-encrypt" data-wpm="抱歉, 这个密码看着不太对, 请再试试." data-whm="抱歉, 这个文章不能被校验, 不过您还是能看看解密后的内容.">
-  <script id="hbeData" type="hbeData" data-hmacdigest="07d7ff1d34a83443a1a529929eced495dc7551169961fef8c14c8f794b51b8d9">0933b8ca71898aaf7cd31f35916167dbab52874ae47c7c337afa725690cbb5b680b572362c1b550d18fe88dd4c06d38c13e7262d1da07f76ec107bd71afdd56d500ef44a3e8a4aa7cc0641d89984cbcee84462e4ff64f3d5b5fd0231d9dddf40acf5c67f95f1d2b254812bed24a4fed109fefa438302e21bd72477c907eb7668c74a8edee41504564f8626618afa0a7fc0ebde80e94e20468bb33c718163fba8b4d52c990137cb8a56e378cc5acef95f40a1d10f3be8f7674ef3f5337a040d9def26edcd4fffe2e3066431095d96ce48a474997ef3caa33e4f2d9a24bd5b9f13acbedf21a843e408fa3eac9d69fe9808a7d94d03ba288636807260786259995d58fb35ba8b8432e62da5bcfcf43f3b8d4072308f098b8201be7f5fe0c05caaf931e700c989e62444d8bd6b084589805b6a417b3ada215e6242beefc98921861a4ef954deccd8c0c9f3fee7270e12eab2e8b52899a50c33f09532de334e13985d22015bf2599f539939c96f9da34055c3e318a69e96e036a1e1425a760fb3ff3908a1e0b56ab16212228517f4818bc4ca09c9d5e0c5d78f77c73afdb55379125cd335f5b9e6557124edd3471cab6c7b82d9a749dcc52c095225998e10ccbb287c2f310f8a57331a6e289ee57f8cec13a8b1c337477f6fdc7a3f3fd3db11fa61af1ade800a454c14a62260c289510e4cf05c59ba23a27ae6a783f046677bb4cc245eba2299ad023b622c1fceeb05ab269e4b01ab7c976b53ac5f092eb413d2277d58725efef54da023f5102a00679e8e0f43d741c1a886a884a7dac007889caa1c820d67a435e2d098fa574e33494cd92ca616b0060ef6353477386faf56d772b68de16629cf272ec4dccd5b3e818392bb19a50a551e552f49cb3a82827b920f811a1f8711ca0ed0cae4ac5d331eafda257f00a08e6941cfe0032121810c548a8a17b4bf37a318c388146d9e735f53ffac3a9c8d1d2f64a727f0893a45f8b64b80a96e787c765d6ca968fceb6655ab9cf4477fafe7d29c5f1be5df4f17ab89da84dd298c10f476bc77cf3aca11a74af6ad563aada324e9677174f0ec8aa9e693f29ddb77c7f8f92f4060b34e3e2c8f0f762f5390801ca90d94609e23cbf1d9a15fdc6c621d89eeed78732a9a34408c533bcce5f7b3b4a5918f627d1006b28d106f828abf95443e5315a56f634352fe30368a96601de424433f86d878eb000a6dccbba7ab0f79ec039ba7f757d414c953307203127408beb549597743b09f49f6fcaad9b6e5e9d2ef581fc1c84ad7a6cf9fd98b7071f4d76b7467fd3a676891e197b2aa836f9014c055b15b1b2ccc2bdf6b5e901d0cfcbbe8382d0be6c166e3591c131e748deb2b2f211a3f376279c735ebe735a8f6acec5eccb2499be415ee82cbe963949b0e55dca52c2d2230f521272ac97b3f7cfdd0aaa026b2049b6eea6aa87f655befddb0a0044f47e8ac5f4c2105ac8432c2e203a5fcd6481cf2d107800532c06a42af620938d9a386335d267e6ba9bc76a09fbaac2fcd6269ad2599e16b964534c7663b44a580344c7bebee33d4e26aaf3d34527161864887cbfef653b480529d452ef7564cd30feae6e700f4714d104c489115a4fdb953efccf42b04fc859dcd08be9328ba43f5b952a76811e62e46e889e69ea7e004033d2e4dbae04c0b9e724463ed60b84863e39fd3d07697d743f32ce0852c47c85a159580ce34f38b5a0ccbf5b960d4b093b3cd72ff1e7798d28c1393ee1f3d73bbac3e0191d39316cd416b79b8371e0171fc8f1ad63673dd9bb24ff7fc169c59a7fc9837c0103018fd2c4b40e091a11a28ca39fef061d9aa41f755a60e5df35703ef374011ce367bc07715d0a72b67143671f99fd7263ad08ffa287fe5e3557378de5cbbbf0cb30a114ea73135dd69b8f54c85da64bc7ccca843e15156a83a66e011bf81d6c3235ae706513640e7d6312efda2c31af72356a17656e703bb655ac52a3a94eafbcea3daafa84a4b467a7777a5e4ad3803f8b864be2a7136c6fd683efdae1d6941865f3cb9badc4e8dd65f41f2d2f8dab5b2bd39962cb3e56f68e6ff348f63850c677a285c8b862ddcfb243f6b22d6a5179d98a64aa0407cbe52e64e1d86ecb11b7d169222a14a1031bd3bc04aa1c5c4638a22830a0e56f432f3001d1d6cbc04bbe6bec051dbeb0983fc017b94555157d53df7df2671a983e8e88ff987b4b6a3f4be37f38c8fb9a1ead01f2fdbfb39873fc6c5418c4599dcd233949fc02f91ceff034dd7e56bc0329057d579c8d40f09a2ba5ab94839e36f03612d5bdb3be35ea5bbc697ce80e99950470ff54dbc629c9f804c3e140eda1f1572535c9f5d22b8ebf3c1df85843953e5fa9a40ca5c0b6c497092755877d92340c5d9314a1188fdf6764c41a5cc879eeab72f82f042575951b7f9d7f4fd598582d353f8ae4f84e87a813ac549ae3f7343bdd9898477623fa6e6684f5a37bbb91e52ce9bf7465399bce04a7f7f58122c6a25369074be4741ebfbc2408fed9e7523d93fcb05c1abf2936db7034c93f9298447a7128b638330b9553e4753b9887185e3f97306fe53c047c8ed65ccc30bde2d891df230c17d1728b79d5a42d2048ca271b6c6b22db27ab770a91fc94a20a4c4f42e2369a4de9188d1af411ff6d83270c280124f8c6e12d3c42b3c04fcd73b71e1bfe0afe0b7a1d9dd56aefa546b59031b688fa7db58ba3eb292b55cc2cbbd5a8fe47a7c8439b618516f92edddb44ca082b292654e1ceb6d11edc3b1311019154d8291bc9c46ce84a9b21f953244828ef99fc14575ce75ae0853a7d91bcbee0897d661e63eb4b3ef3dc5080b4514503227d105a4bc1f252a8bd56a405577112cbcf44c75ddf61ec1e8c8ec2cb3de06832306b4b9c58b0fbb11cffc8f15521c5d70927bb44d04d329e56171abef5bbebe332f85d7bb2a8553850a609aac1fd4abd86419beb55a12a0c36115df2ab4dbd15cfadb47bc7933cc7b15d8a72740128cc3478f8d44447316d119fb037bf05dee778e3e86aee91bab5117c5a965a3a01cbd7d155d767c7ad02227406860b5d74cba29cfd29da9905a2ede2f49d5269b5028f4910a1f0515bfdfe6f5de6ba1bb2c6e2fd6eab864835cad187b2559b97d27fa6cc54f22ca0828db4d09e5868f0d8481d816bbe52726ae070e15ec1e1f1c33f2cdadeb25964f8a83afebb98114e3dd7c74864699f14cba962caf83bee9d2d115debb78cca9f41970eb2a6ab79923e7d2f17681804acf8275ea70a94c5cf2541e8d7eb8a8d570c3c8ac4bc9bc3fef480c187890606a1bf60d0afdac11e6811313c0bb473ef74cac9c32c8773f6d868ab12c30f0eb3fd26fd2a41df32c23ed4e2a2ea553e1a734a68443613aceb541436260e84ac14cd1a7da24a0e2030f8db7fdcc6297ff13aa5b3fb2144478b4480398327cef1c15e2de8ecd01746f2b508c3f5f1a8698ac74a6c3eeb208a21f19acb96f51fd536536840bf4e2547514efc212bd12e8331feee467595d5d920effd365feac2a9d220ae5156d6956966d7c239019725181a26873cb846c417eea34a348fd9e2ff76061ff53f0db4d2b264b0913acb83d74becf912cec1fb611e66515c816fcbf705cf1367c2a23444599d1ef6b13f52ea278e9a60c3a4402c5137381c23fe465fa2657c11ed162985df993fa1c4d5484cff0a47433548a72fe68224f31b535b99872bf87f2d9b90e134d5294cf2850ac3ea2e5675f4ce502fb3823244491b88b0775e234e15e4d2c0247f13475ddeb7962e0ce58309e2c2efa04b57e0ac293eea506edee82b52bc09bc114ae5abe4eaa08d3f6513213c10e3f760cc48a12921a847c68b0e9eb4de96c279ca587a729bb4d84801012d3296ec0733e4067ac7fe01ad33ae924af1be058a6693f3197758ac33e3ece4329e6142a13b28eb169b99fff4f69c420</script>
+      detectApple()
+    })(window)</script><meta name="generator" content="Hexo 7.0.0"></head><body><div id="web_bg"></div><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="https://sukicdn.com/summid/i/2023/04/17/lijun_avatar.png" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">4</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">0</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">0</div></a></div><hr class="custom-hr"/></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background: transparent"><nav id="nav"><span id="blog-info"><a href="/" title="兽人大学公告栏"><span class="site-name">兽人大学公告栏</span></a></span><div id="menus"><div id="toggle-menu"><a class="site-page" href="javascript:void(0);"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">兽人大学重生之后0.35版本下载</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2023-04-28T00:00:00.000Z" title="发表于 2023-04-28 00:00:00">2023-04-28</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2023-11-08T14:31:55.141Z" title="更新于 2023-11-08 14:31:55">2023-11-08</time></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title="兽人大学重生之后0.35版本下载"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">阅读量:</span><span id="busuanzi_value_page_pv"><i class="fa-solid fa-spinner fa-spin"></i></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><div class="hbe hbe-container" id="hexo-blog-encrypt" data-wpm="抱歉, 这个密码看着不太对, 请再试试." data-whm="抱歉, 这个文章不能被校验, 不过您还是能看看解密后的内容.">
+  <script id="hbeData" type="hbeData" data-hmacdigest="ac7d7bfddaf1448fbc8e2e31acd2e17b77898d2ac0c8272267c661dde8061165">0933b8ca71898aaf7cd31f35916167dbab52874ae47c7c337afa725690cbb5b680b572362c1b550d18fe88dd4c06d38c13e7262d1da07f76ec107bd71afdd56d500ef44a3e8a4aa7cc0641d89984cbcee84462e4ff64f3d5b5fd0231d9dddf40acf5c67f95f1d2b254812bed24a4fed109fefa438302e21bd72477c907eb7668c74a8edee41504564f8626618afa0a7fc0ebde80e94e20468bb33c718163fba8b4d52c990137cb8a56e378cc5acef95f40a1d10f3be8f7674ef3f5337a040d9def26edcd4fffe2e3066431095d96ce48a474997ef3caa33e4f2d9a24bd5b9f13acbedf21a843e408fa3eac9d69fe9808a7d94d03ba288636807260786259995d58fb35ba8b8432e62da5bcfcf43f3b8d4072308f098b8201be7f5fe0c05caaf931e700c989e62444d8bd6b084589805b6a417b3ada215e6242beefc98921861a4ef954deccd8c0c9f3fee7270e12eab2e8b52899a50c33f09532de334e13985d22015bf2599f539939c96f9da34055c3e318a69e96e036a1e1425a760fb3ff3908a1e0b56ab16212228517f4818bc4ca09c9d5e0c5d78f77c73afdb55379125cd335f5b9e6557124edd3471cab6c7b82d9a749dcc52c095225998e10ccbb287c2f310f8a57331a6e289ee57f8cec13a8b1c337477f6fdc7a3f3fd3db11fa61af1ade800a454c14a62260c289510e4cf05c59ba23a27ae6a783f046677bb4cc245eba2299ad023b622c1fceeb05ab269e4b01ab7c976b53ac5f092eb413d2277d58725efef54da023f5102a00679e8e0f43d741c1a886a884a7dac007889caa1c820d67a435e2d098fa574e33494cd92ca616b0060ef6353477386faf56d772b68de16629cf272ec4dccd5b3e818392bb19a50a551e552f49cb3a82827b920f811a1f8711ca0ed0cae4ac5d331eafda257f00a08e6941cfe0032121810c548a8a17b4bf37a318c388146d9e735f53ffac3a9c8d1d2f64a727f0893a45f8b64b80a96e787c765d6ca968fceb6655ab9cf4477fafe7d29c5f1be5df4f17ab89da84dd298c10f476bc77cf3aca11a74af6ad563aada324e9677174f0ec8aa9e693f29ddb77c7f8f92f4060b34e3e2c8f0f762f5390801ca90d94609e23cbf1d9a15fdc6c621d89eeed78732a9a34408c533bcce5f7b3b4a5918f627d1006b28d106f828abf95443e5315a56f634352fe30368a96601de424433f86d878eb000a6dccbba7ab0f79ec039ba7f757d414c953307203127408beb549597743b09f49f6fcaad9b6e5e9d2ef581fc1c84ad7a6cf9fd98b7071f4d76b7467fd3a676891e197b2aa836f9014c055b15b1b2ccc2bdf6b5e901d0cfcbbe8382d0be6c166e3591c131e748deb2b2f211a3f376279c735ebe735a8f6acec5eccb2499be415ee82cbe963949b0e55dca52c2d2230f521272ac97b3f7cfdd0aaa026b2049b6eea6aa87f655befddb0a0044f47e8ac5f4c2105ac8432c2e203a5fcd6481cf2d107800532c06a42af620938d9a386335d267e6ba9bc76a09fbaac2fcd6269ad2599e16b964534c7663b44a580344c7bebee33d4e26aaf3d34527161864887cbfef653b480529d452ef7564cd30feae6e700f4714d104c489115a4fdb953efccf42b04fc859dcd08be9328ba43f5b952a76811e62e46e889e69ea7e004033d2e4dbae04c0b9e724463ed60b84863e39fd3d07697d743f32ce0852c47c85a159580ce34f38b5a0ccbf5b960d4b093b3cd72ff1e7798d28c1393ee1f3d73bbac3e0191d39316cd416b79b8371e0171fc8f1ad63673dd9bb24ff7fc169c59a7fc9837c0103018fd2c4b40e091a11a28ca39fef061d9aa41f755a60e5df35703ef374011ce367bc07715d0a72b67143671f99fd7263ad08ffa287fe5e3557378de5cbbbf0cb30a114ea73135dd69b8f54c85da64bc7ccca843e15156a83a66e011bf81d6c3235ae706513640e7d6312efda2c31af72356a17656e703bb655ac52a3a94eafbcea3daafa84a4b467a7777a5e4ad3803f8b864be2a7136c6fd683efdae1d6941865f3cb9badc4e8dd65f41f2d2f8dab5b2bd39962cb3e56f68e6ff348f63850c677a285c8b862ddcfb243f6b22d6a5179d98a64aa0407cbe52e64e1d86ecb11b7d169222a14a1031bd3bc04aa1c5c4638a22830a0e56f432f3001d1d6cbc04bbe6bec051dbeb0983fc017b94555157d53df7df2671a983e8e88ff987b4b6a3f4be37f38c8fb9a1ead01f2fdbfb39873fc6c5418c4599dcd233949fc02f91ceff034dd7e56bc0329057d579c8d40f09a2ba64e7324e18b9bdb6ce1297a8ae8b7d77d1f4f17ddb3a49cbb49c330b50deb89efa1eddd747c659eba6e8a1e3373ca9a92abb2c9b3b2bd4559da4498d46fa440b3eb9088141d0b861bee9cc5a6e65a7f66caed547b473600dd19fa80bd0150926e458be0d689b2e699263bf8b80730083799a799b5992cc553fd9e5c4bd18aaa5aeb15f546fbd757ebe0d3018cd27a75ee003545287bf13a78280213301bcd112e8bd7f7f8b5a5142d7b377cb22b4d5e19020854415ba04bdc7437c554eedadbe7ab74607b6d069b3a7e77a48fdd00c3fc23fbcfe2d363b556bd9dadb38552082b32fa7e518ed6aa85612db4d5ef9542d6a446b0c925662b79607c89a14b92d90b1603948d93c26364ddff474d3bf2479fe4fced115df6f6eea491c38a945472d4b267857ccca11451485b72a4ba59bc76d00fda3ccd7ada8fa97f490c8550b449ff8f5cbdcfc3d222fd316cef0acf813aca8b469cb98e8a433e0d56f3fc63cd12cb8754b8f81a09f5a9edbde5959036cb5bce77ec5d23ca5015fc33008c02a14ef70bc9a1d52078e50825622c79a49989b3e64c90adefe1209458ba6f2ca4b4f52b5845aa833219950b691a52e890ea47d4f2c36fd0f1fec9e28dfdc0991a6d923948d02358578838e69821787df1e93f7e18839f9eded706bf6fa14175ef8afeacc188bd54c61aee6201553fb17a530d0f7797a7a5b593043fb8584b19af61de09825fb3b378e9e9535c3a26266b1efd7f889f198c4bab3a4d5338559670a3093950fac44ae6ce0f0d2fbfdccb81359b3a5de7493afb5f1549214b9d49806213455258284e4bc84f9e4cd8042158af4da124ec2cc528516843dd27f653a6d31f18585861498c3cc16a2b761130c9804426a876e491198ead351668cec2de649994d64be6b59ea8870ee19073751a63ba630ac770e899104813e7e7eb79dde34c6ab1def530f028a5d7c801e8fe997d5725bf17aa7e46f337db6e69bf1745f591416eaa740aa0edf308f8e832ef55e8c589d3242a1b225b6a474151b6d49fbfe7a13277fb149c6f3ab60545ab2de7f5a05817b7723661b4bafd524b3e280ba6115e2c58912004a7945bf9b16d018a590c326f95b310d766c16070c480ef5d07a628376d3c456d4f2c7de4ca4a021c5eaeeefc97aac9e698bfec1bcf3d9cdac43562a91f8224cbb34654cb381fcb5b951770b6839703cb61b34889ba1a4bf2f7ed8676fa2edf6fc7716502e4ad90846d3777114e3526fb40abfea7f8dca25255f2bc9aaf88c496a4b1ef1d58554309c41b8cc83221e686f1859fada8c972a89c5fdfe5f404d75160b1c7bb27b077b17818869d82e2fc88d43495d228bc9aae9673b5f1f24c70064109efa5e92a6b5b32bec8342bee5221ee86ecdacf38f3aef70ac6ae05419fd671c5d0e386966bf8eabc7241773e7ada617a644919d57f82d52ca24336d8b7ef0a15a8515d75cbe2fc5baeebd24eb5f0d6c63d2c892c6dbb9299a9184d38fa3e0e181a8e8184d70d8d8c647af622c7efe4d5dfa92d0ec55b79fc7a8b033b378167c89f7f01020f31a6b69d76a3ebedcf2b0e76f36f0d588c1caccf51892d7134954b0eabf197c9eb0396f787dccbee70fbe1774102b7cef5f4c49e627475b703e362a321e59bafcea90</script>
   <div class="hbe hbe-content">
     <div class="hbe hbe-input hbe-input-default">
       <input class="hbe hbe-input-field hbe-input-field-default" type="password" id="hbePass">
@@ -191,4 +182,4 @@
     </div>
   </div>
 </div>
-<script data-pjax src="/lib/hbe.js"></script><link href="/css/hbe.style.css" rel="stylesheet" type="text/css"></article><div class="tag_share"><div class="post-meta__tag-list"></div><div class="post_share"></div></div><nav class="pagination-post" id="pagination"><div class="prev-post pull-left"><a href="/release0_40/" title="兽人大学重生之后0.40版本下载"><div class="cover" style="background: var(--default-bg-color)"></div><div class="pagination-info"><div class="label">上一篇</div><div class="prev_info">兽人大学重生之后0.40版本下载</div></div></a></div><div class="next-post pull-right"><a href="/release0_30/" title="兽人大学重生之后0.30版本下载"><div class="cover" style="background: var(--default-bg-color)"></div><div class="pagination-info"><div class="label">下一篇</div><div class="next_info">兽人大学重生之后0.30版本下载</div></div></a></div></nav></div><div class="aside-content" id="aside-content"><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>公告</span></div><div class="announcement_content">这里是兽人大学，若访问中遇到加载不畅的情况，请使用代理以获得最佳体验噢</div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>目录</span><span class="toc-percentage"></span></div><div class="toc-content toc-div-class" style="display:none"></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/release0_40/" title="兽人大学重生之后0.40版本下载">兽人大学重生之后0.40版本下载</a><time datetime="2023-06-29T00:00:00.000Z" title="发表于 2023-06-29 00:00:00">2023-06-29</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/release0_35/" title="兽人大学重生之后0.35版本下载">兽人大学重生之后0.35版本下载</a><time datetime="2023-04-28T00:00:00.000Z" title="发表于 2023-04-28 00:00:00">2023-04-28</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/release0_30/" title="兽人大学重生之后0.30版本下载">兽人大学重生之后0.30版本下载</a><time datetime="2023-03-20T00:00:00.000Z" title="发表于 2023-03-20 00:00:00">2023-03-20</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/release0_25/" title="兽人大学重生之后0.25版本下载">兽人大学重生之后0.25版本下载</a><time datetime="2023-02-08T00:00:00.000Z" title="发表于 2023-02-08 00:00:00">2023-02-08</time></div></div></div></div></div></div></main><footer id="footer" style="background: #00ffff"><div id="footer-wrap"></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="目录"><i class="fas fa-list-ul"></i></button><button id="go-up" type="button" title="回到顶部"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox/fancybox.umd.min.js"></script><div class="js-pjax"></div><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div></body></html>
+<script data-pjax src="/lib/hbe.js"></script><link href="/css/hbe.style.css" rel="stylesheet" type="text/css"></article><div class="tag_share"><div class="post-meta__tag-list"></div><div class="post_share"></div></div><nav class="pagination-post" id="pagination"><div class="prev-post pull-left"><a href="/release0_40/" title="兽人大学重生之后0.40版本下载"><div class="cover" style="background: var(--default-bg-color)"></div><div class="pagination-info"><div class="label">上一篇</div><div class="prev_info">兽人大学重生之后0.40版本下载</div></div></a></div><div class="next-post pull-right"><a href="/release0_30/" title="兽人大学重生之后0.30版本下载"><div class="cover" style="background: var(--default-bg-color)"></div><div class="pagination-info"><div class="label">下一篇</div><div class="next_info">兽人大学重生之后0.30版本下载</div></div></a></div></nav></div><div class="aside-content" id="aside-content"><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>公告</span></div><div class="announcement_content">这里是兽人大学，若访问中遇到加载不畅的情况，请使用代理以获得最佳体验噢</div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>目录</span><span class="toc-percentage"></span></div><div class="toc-content toc-div-class" style="display:none"></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/release0_40/" title="兽人大学重生之后0.40版本下载">兽人大学重生之后0.40版本下载</a><time datetime="2023-06-29T00:00:00.000Z" title="发表于 2023-06-29 00:00:00">2023-06-29</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/release0_35/" title="兽人大学重生之后0.35版本下载">兽人大学重生之后0.35版本下载</a><time datetime="2023-04-28T00:00:00.000Z" title="发表于 2023-04-28 00:00:00">2023-04-28</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/release0_30/" title="兽人大学重生之后0.30版本下载">兽人大学重生之后0.30版本下载</a><time datetime="2023-03-20T00:00:00.000Z" title="发表于 2023-03-20 00:00:00">2023-03-20</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/release0_25/" title="兽人大学重生之后0.25版本下载">兽人大学重生之后0.25版本下载</a><time datetime="2023-02-08T00:00:00.000Z" title="发表于 2023-02-08 00:00:00">2023-02-08</time></div></div></div></div></div></div></main><footer id="footer" style="background: #00ffff"><div id="footer-wrap"></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside-config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="目录"><i class="fas fa-list-ul"></i></button><button id="go-up" type="button" title="回到顶部"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox/fancybox.umd.min.js"></script><div class="js-pjax"></div><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div></body></html>
